@@ -4,10 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus-Ticket</title>
+    <!-- tailwind and daisyUI CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <!-- this is navBar -->
+        <div class="navbar bg-base-100 mx-auto pl-40 pr-40 pt-20">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-2xl font-bold">Hero-Ticket</a>
+            </div>
+            <div tabindex="0" role="button" class="btn btn-ghost bg-yellow-100">
+                <div class="w-30 flex justify-center items-center gap-3 bg-yellow-100 p-3 rounded-2xl ">
+                    <h4 class="text-yellow-400 font-semibold" >Bus</h4>
+                  <img src="./images/bus-icon.png" alt="">
+                </div>
+              </div>
+          </div>
+    </header>
+    <main>
+        <!-- bannder section -->
+       <div class=" ">
+        <div class=" bg-[url('./images/banner.png')] bg-no-repeat  bg-center  flex min-w-full items-center justify-center ">
+          <div class="items-center justify-center flex flex-col gap-y-10 text-center pt-28 py-64 ">
+            <h1 class="text-yellow-50 items-center" >End-to-End Travel with <br> 
+                <span>P Paribahan</span> </h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined </p>
+                <button class="btn btn-warning">Buy Tickets</button>
+          </div>
+
+        </div>
+       </div>
+        <!-- banner end -->
+        <!-- ----------------------------------------- -->
+        <!-- best offer section -->
+        <div class="pt-16">
+            <div class="flex items-center justify-center">
+                <h1 class="text-2xl font-bold">Best offers for you</h1>
+            </div>
+            <div class="flex items-center justify-center gap-10 pt-16">
+                <div class=" ">
+                    <div class="card card-side bg-yellow-200 shadow-xl">
+                        <div class=" p-16">
+                            <h1 class="text-2xl font-bold">15% OFF </h1>
+                            <P class=" font-semibold">on your next purchase
+                            </P>
+                            <P class="text-sky-400/50">use by February 2024</P>
+                        </div>
+                        <div class="card-body text-center p-20">
+                          <h2 class="text-2xl font-bold">NEW15</h2>
+                          <p class="font-semibold text-sky-400/50">Coupon Code</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="">
+                    <div class="card card-side bg-yellow-200 shadow-xl">
+                        <div class=" p-16">
+                            <h1 class="text-2xl font-bold">20% OFF </h1>
+                            <P class=" font-semibold">on your next purchase
+                            </P>
+                            <P class="text-sky-400/50">use by February 2024</P>
+                        </div>
+                        <div class="card-body text-center p-20">
+                          <h2 class="text-2xl font-bold">Couple 20</h2>
+                          <p class="font-semibold text-sky-400/50">Coupon Code</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center pt-14"> 
+                <button class="btn btn-outline w-44 btn-warning">See All Offers</button>
+            </div>
+        </div>
+        <!-- best offer end -->
+        <!-- ---------------------H paribhon set -->
+        <div class="bg-slate-300 border-t-2 border-yellow-400 rounded-2xl pt-16 mt-20">
+            <div class="text-center">
+                <h1>Hero Paribahan</h1>
+                <p> Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined  </p>
+            </div>
+
+            <div class=" p-12">
+                <div class=" bg-base-100 shadow-xl flex justify-around rounded-xl ">
+                   <div class="w-[70%]">
+                    <div class="  flex justify-between pt-8 px-14">
+                        <div class="flex gap-5">
+                            <div><img src="./images/bus-logo.png" alt=""></div>
+                            <div>                               
+                                <h1>Hero Paribahan</h1>
+                                <p>Coach-009-WEB! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-yellow-200 justify-center items-center rounded-xl p-4 text-yellow-500 font-semibold gap-x-2">
+                            <img class="h-8" src="./images/seat-green.png" alt="">
+                            <h3> <span id="total-seat">40</span> Seats left</h3>
+                        </div>
+                    </div>
+                    <div class="bg-zinc-200 p-5 m-8 rounded-2xl">
+                        <div class="flex justify-between font-semibold  py-5">
+                            <h1>Rout</h1>
+                            <h2>Dhaka-Barishal</h2>
+                        </div>
+                        <hr class="border-yellow-500 border-dotted">
+                        <div class="flex justify-between font-semibold  py-5">
+                            <h1>Rout</h1>
+                            <h2>Dhaka-Barishal</h2>
+                        </div>
+                        <hr class="border-yellow-500 border-dotted">
+                        <div class="flex justify-between font-semibold  py-5">
+                            <h1>Rout</h1>
+                            <h2>Dhaka-Barishal</h2>
+                        </div>
+                        <hr class="border-yellow-500 border-dotted ">
+                    </div>
+                   </div>
+                  
+                    <div class=" flex items-center justify-center flex-col pr-8  gap-5">
+                        <img src="./images/fare.png" alt="">
+                      <h2 class=""> <span id="per-seat-price">550</span> Taka</h2>
+                      <p>Per Seat</p>                       
+                    </div>
+                  </div>
+            </div>
+              <!-- bus seat  -->
+              <div class="p-12 ">
+                <div class=" bg-base-100 shadow-xl flex justify-around gap-5">
+                    <!-- seet -->
+                    <div class="w-[50%]">
+                        <h1>Select Your Seat</h1>
+                        <hr class="border-yellow-500 border-dotted">
+                                <div class="flex justify-between font-semibold  py-5">
+                                    <div class="flex gap-x-2">
+                                        <img src="./images/seat-green-filled.png" alt="">
+                                        <div class="flex gap-x-2">
+                                            <img src="./images/seat-gray.png" alt="">
+                                            <h1>Select</h1>
+                                        </div>
+                                    </div>
+                                    <h2>Dhaka-Barishal</h2>
+                                </div>
+                                <hr class="border-yellow-500 border-dotted ">
+                                 <!-- bus seat -->
+                    <div class="grid grid-cols-5 gap-3"> 
+                        <div class="bg-slate-300 col-span-4"></div>
+                        <div class="bg-slate-300">a-2</div>
+                        <div id="A0" class="per-set bg-slate-300">A0</div>
+                        <div id="A1" class="per-set bg-slate-300">A1</div>
+                        <div id="A2" class="per-set bg-slate-300">A2</div>
+                        <div id="A3" class="per-set bg-slate-300">A3</div>
+                        <div id="A4" class="per-set bg-slate-300">A4</div>
+                        <div id="B0" class="per-set bg-slate-300">B0</div>
+                        <div id="B1" class="per-set bg-slate-300">B1</div>
+                        <div id="B2" class="per-set bg-slate-300">B2</div>
+                        <div id="B3" class="per-set bg-slate-300">B3</div>
+                        <div id="B4" class="per-set bg-slate-300">B4</div>
+                        <div id="C0" class="per-set bg-slate-300">C0</div>
+                        <div id="C1" class="per-set bg-slate-300">C1</div>
+                        <div id="C2" class="per-set bg-slate-300">C2</div>
+                        <div id="C3" class="per-set bg-slate-300">C3</div>
+                        <div id="C4" class="per-set bg-slate-300">C4</div>
+                        <div id="D0" class="per-set bg-slate-300">D0</div>
+                        <div id="D1" class="per-set bg-slate-300">D1</div>
+                        <div id="D2" class="per-set bg-slate-300">D2</div>
+                        <div id="D3" class="per-set bg-slate-300">D3</div>
+                        <div id="D4" class="per-set bg-slate-300">D4</div>
+                        <div id="E0" class="per-set bg-slate-300">E0</div>
+                        <div id="E1" class="per-set bg-slate-300">E1</div>
+                        <div id="E2" class="per-set bg-slate-300">E2</div>
+                        <div id="E3" class="per-set bg-slate-300">E3</div>
+                        <div id="E4" class="per-set bg-slate-300">E4</div>
+                        <div id="F0" class="per-set bg-slate-300">F0</div>
+                        <div id="F1" class="per-set bg-slate-300">F1</div>
+                        <div id="F2" class="per-set bg-slate-300">F2</div>
+                        <div id="F3" class="per-set bg-slate-300">F3</div>
+                        <div id="F4" class="per-set bg-slate-300">F4</div>
+                        <div id="G0" class="per-set bg-slate-300">G0</div>
+                        <div id="G1" class="per-set bg-slate-300">G1</div>
+                        <div id="G2" class="per-set bg-slate-300">G2</div>
+                        <div id="G3" class="per-set bg-slate-300">G3</div>
+                        <div id="G4" class="per-set bg-slate-300">G4</div>
+                        <div id="H0" class="per-set bg-slate-300">H0</div>
+                        <div id="H1" class="per-set bg-slate-300">H1</div>
+                        <div id="H2" class="per-set bg-slate-300">H2</div>
+                        <div id="H3" class="per-set bg-slate-300">H3</div>
+                        <div id="G4" class="per-set bg-slate-300">G4</div>          
+                </div>
+                    </div>
+                   
+                 <!-- counting seat -->
+             <div class="w-[50%]">
+                <h1>Select Your Seat</h1>
+                <hr class="border-yellow-500 border-dotted ">
+                <div class=" gap-x-5 bg-slate-300 p-5 m-3 rounded-xl">
+                    <div class="flex gap-x-5 p-5 rounded-xl justify-around">
+                        <h1 > Seat <span id="seat-number">0</span> </h1>
+                    <h2> Class</h2>
+                    <h3>Price</h3>
+                    </div>
+                    <hr class="border-yellow-900 border-collapse ">
+                    <div id="select-set"></div>
+                    <hr class="border-blue-900 border-collapse ">
+                    <div class="flex justify-around">
+                        <h1>Total Price</h1>
+                        <h1>BDT <span id="total-price">0</span></h1>
+                    </div>
+                </div>
+
+                <div class="p-4">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Have any copupon?" />
+                        <button class="btn btn-warning">Apply</button>
+                      </label>                 
+                </div>
+
+                <div class="flex justify-around">
+                    <h1>Grand Total</h1>
+                    <h1>BDT <span id="grand-total">0</span></h1>
+                </div>
+
+             </div>
+              </div>
+            
+        </div>
+        <!-- ------------------h paribhan end -->
+
+      
+    </main>
     <footer></footer>
     <script src="./script/utilits.js"></script>
     <script src="./script/main.js"></script>
