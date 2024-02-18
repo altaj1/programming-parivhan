@@ -7,14 +7,13 @@ function getElementValueTextById(id){
 }
 function createElement (tag){
     const p = document.createElement("p");
-    
-    const div = getElement("select-set")
-    
-  const appent =   div.appendChild(p)
-  return appent
-
-    
+    const div = getElement("select-set");  
+  const appent =   div.appendChild(p);
+  return appent;   
 }
 function getElement (id){
-   return document.getElementById(id)
+   return document.getElementById(id);
 }
+
+
+
