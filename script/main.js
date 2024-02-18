@@ -44,23 +44,28 @@ for(const seat of seats){
             const discunt15 = parseInt(getElementValueTextById("total-price")) * 0.15;
             console.log(discunt15)
             const grandtotal = parseInt(getElementValueTextById("grand-total")) - discunt15;
-            setElementValueByID("grand-total", grandtotal)
+            setElementValueByID("grand-total", grandtotal);
+            getElement("cuppon-hedden").classList.add("hidden");
          }
          else if (cuppolValidation2 == "Couple20"){
             const discunt15 = parseInt(getElementValueTextById("total-price")) * 0.2;
             console.log(discunt15)
             const grandtotal = parseInt(getElementValueTextById("grand-total")) - discunt15;
-            setElementValueByID("grand-total", grandtotal)
+            setElementValueByID("grand-total", grandtotal);
+            getElement("cuppon-hedden").classList.add("hidden");
          }
          else{
-            alert("Please enter valid coupon code!")
+            alert("Please enter valid coupon code!");
+            getElement("input-fild").value = ""
          }
-         getElement("cuppon-hedden").classList.add("hidden")
+         
          })
        }
     }
     else{
-        alert("You cannot buy more ticket!")       
+        alert("You cannot buy more ticket!") ;
+        event.target.style.backgroundColor = ""
+        return      
     }
     // modal
 const inputField = getElement("input-phone");
@@ -73,7 +78,7 @@ inputField.addEventListener("change", (event)=>{
         getElement("purces-button").addEventListener("click", ()=>{
             const modatBtn = getElement("modat-btn");
             modatBtn.click();
-            getElementValueTextById("grand-total") = ""
+            
         })
     }
    });
